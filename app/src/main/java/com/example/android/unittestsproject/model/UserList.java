@@ -40,4 +40,5 @@ public class UserList {
     public void setItems(List<User> items) {
         this.items = items;
     }
+
 }
