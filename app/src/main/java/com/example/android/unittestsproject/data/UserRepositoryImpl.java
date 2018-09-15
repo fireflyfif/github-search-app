@@ -1,4 +1,14 @@
 package com.example.android.unittestsproject.data;
 
-public class UserRepositoryImpl {
+import com.example.android.unittestsproject.data.remote.GithubUserRestService;
+
+public class UserRepositoryImpl implements UserRepository {
+
+    private GithubUserRestService mGithubService;
+
+    public UserRepositoryImpl(GithubUserRestService githubUserRestService) {
+        mGithubService = githubUserRestService;
+    }
+
+
 }
